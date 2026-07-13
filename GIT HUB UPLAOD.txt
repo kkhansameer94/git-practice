@@ -1,0 +1,117 @@
+UPLOAD ALL PROJECT FILE
+Ek line command (ONLY for CMD)
+
+CMD me use this:
+
+cd Desktop\MY PROJECT\codecrush
+git add . && git commit -m "Full project update" && git push
+
+PowerShell OR Vs CODE me ek line chahiye toh:
+
+git add .; git commit -m "Full project update"; git push
+
+delete ko wipis lana hai github se
+
+git fetch --all
+git reset --hard origin/main
+git clean -fd
+
+
+Golden rule (yaad rakhna)
+Git commands hamesha project folder ke andar run karte hain
+C:\Users\janealam>
+
+CORRECT WAY
+cd Desktop\MY PROJECT\codecrush
+
+Step 2: Confirm git active hai
+git status
+
+
+Agar yeh show ho:
+
+On branch main
+
+CASE 1: Project delete ho gaya laptop se → GitHub se wapas lao
+
+Agar GitHub par already upload hai, tension nahi.
+
+Step-by-step recover project
+1️⃣ GitHub repo link copy karo
+
+Example:
+
+https://github.com/kkhansameer94/CodeCrush.git
+
+2️⃣ Desktop ya jahan project chahiye wahan open terminal (CMD)
+cd Desktop
+
+3️⃣ Clone command
+git clone https://github.com/kkhansameer94/CodeCrush.git
+
+4️⃣ Folder open karo
+cd CodeCrush
+
+
+Bas 🎉
+Poora project wapas aa jayega same as GitHub. 
+
+💻 CASE 2: Dusre laptop me project open karna hai
+
+Same process.
+
+Step 1: Git install (agar nahi hai)
+
+https://git-scm.com/downloads
+
+Step 2: CMD open
+cd Desktop
+
+Step 3: Clone project
+git clone https://github.com/kkhansameer94/CodeCrush.git
+
+Step 4: Open project in VS Code
+cd CodeCrush
+code .
+
+
+Project open.
+
+📦 IMPORTANT: Node project run karna (frontend/backend)
+
+Clone ke baad node_modules nahi aayega
+Isliye install karna padega.
+
+Backend run
+cd codecrush-backend
+npm install
+npm start
+
+Frontend run
+
+New terminal:
+
+cd codecrush-frontend
+npm install
+npm run dev
+
+🧠 VERY IMPORTANT RULE
+
+GitHub = cloud backup
+
+Agar laptop crash
+Agar file delete
+Agar system format
+
+👉 GitHub se sab wapas
+
+🔥 PRO TIP (Senior dev trick)
+
+Always push after work:
+
+git add .
+git commit -m "update"
+git push
+
+
+Phir kabhi project lost nahi hoga.
